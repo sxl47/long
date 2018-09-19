@@ -14,33 +14,7 @@
    <string>main_frame</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#main_frame {
-	background-color: rgb(255, 255, 255);
-}
-
-#scrollArea {
-    border-style: solid;
-    border-width: 1px;
-	border-color: rgb(168, 168, 168);
-}
-
-#scrollAreaWidgetContents {
-	background-color: rgb(244, 244, 244);
-}
-
-QPushButton {
-	margin:0px 1px 1px 0px;
-    border-style: solid;
-    border-color: rgb(0,0,0);
-    border-width: 1px;
-    border-radius: 5px;
-	background-color: rgb(90, 154, 250);
-	color: rgb(255, 255, 255);
-}
-QPushButton:pressed {
-	margin:1px 0px 0px 1px;
-	background-color: rgb(110, 174, 255);
-}</string>
+   <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="1" column="1">
