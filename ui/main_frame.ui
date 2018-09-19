@@ -1,19 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
-    <class>main_frame</class>
-    <widget class="QWidget" name="main_frame">
-        <property name="geometry">
-            <rect>
-                <x>0</x>
-                <y>0</y>
-                <width>400</width>
-                <height>300</height>
-            </rect>
-        </property>
-        <property name="windowTitle">
-            <string>main_frame</string>
-        </property>
+ <class>main_frame</class>
+ <widget class="QWidget" name="main_frame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>274</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>main_frame</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#main_frame {
+	background-color: rgb(255, 255, 255);
+}
+
+#scrollArea {
+    border-style: solid;
+    border-width: 1px;
+	border-color: rgb(168, 168, 168);
+}
+
+#scrollAreaWidgetContents {
+	background-color: rgb(244, 244, 244);
+}
+
+QPushButton {
+	margin:0px 1px 1px 0px;
+    border-style: solid;
+    border-color: rgb(0,0,0);
+    border-width: 1px;
+    border-radius: 5px;
+	background-color: rgb(90, 154, 250);
+	color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+	margin:1px 0px 0px 1px;
+	background-color: rgb(110, 174, 255);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="1">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>254</width>
+        <height>294</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="3">
+        <widget class="QPushButton" name="pushButton">
+         <property name="minimumSize">
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="4">
+        <widget class="QTextBrowser" name="textBrowser"/>
+       </item>
+       <item row="2" column="0" colspan="4">
+        <widget class="QProgressBar" name="progressBar">
+         <property name="value">
+          <number>24</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item row="0" column="3">
+        <widget class="QComboBox" name="comboBox"/>
+       </item>
+       <item row="0" column="0" colspan="3">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </widget>
-    <resources/>
-    <connections/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
 </ui>
